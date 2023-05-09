@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  border: 5px solid black;
+  width: 825px;
+  margin: 50px auto;
+}
+
+.product-name {
+  text-align: center;
+  background-color: #f1f1f1;
+  font-size: 22px;
+  padding: 15px;
+  position: relative;
+}
+
+.product-name::before {
+  content: "sale";
+  background-color: #ec1010;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 7px 14px;
+  color: #fff;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+  letter-spacing: 2px;
+}
+
+.layout-separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.product-image {
+  width: 250px;
+}
+
+.first-column {
+  flex: 1;
+}
+
+.second-column {
+  flex: 1;
+}
+
+.price-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 25px;
+}
+
+.shipping {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #818181;
+}
+
+.product-tagline {
+  margin-bottom: 10px;
+}
+
+.more-info {
+  margin-bottom: 30px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.product-colors {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-colors div {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.blacktile {
+  background-color: #000;
+}
+
+.bluetile {
+  background-color: #2f6ee2;
+}
+
+.redtile {
+  background-color: #ec2f2f;
+}
+
+.yellowtile {
+  background-color: #f0bf1e;
+}
+
+.greentile {
+  background-color: #90cc20;
+}
+
+.browntile {
+  background-color: #885214;
+}
+
+.product-details {
+  list-style: square;
+  padding: 10px 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-top: 5px solid black;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+}
